@@ -15,11 +15,12 @@ Want to get going? No problem! these are the basic requirements to make this pro
 * AWS Profile setup configured to use the AWS keys for the aformentioned AWS user in the previous bullet. [Instructions](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html)
 * Install Terraform using the following commands in Linux (Ubuntu for example):
 
-    sudo apt-get install -y unzip python-dev
+    ```sudo apt-get install -y unzip python-dev
     wget https://releases.hashicorp.com/terraform/0.11.10/terraform_0.11.10_linux_amd64.zip
     unzip terraform_0.11.10_linux_amd64.zip
     sudo mv terraform /usr/local/bin/
     terraform --version
+    ```
 
 or if you have a Mac:
 
@@ -70,3 +71,13 @@ If the JSON contains the property `ok: true` it means the ethereum node has fini
 Here's an example of how that would look like
 (I'm using a JSON beautifier plugin for Google Chrome that makes JSONs look much better, [click here](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en) to download it if you feel it's useful for you)
 
+![](healthcheck.png)
+
+Once the node is synced you can of course start performing requests against it on the default `8545` RPC port.
+
+Enjoy!
+
+This project is developed and maintained by @itamararjuan 
+Feel free to contribute, PRs are always welcome!
+
+If you find any issues, please open an issue and try to supply a log of your command and a basic outlook at which system you're using and which variables or alterations have you ran your this project with.
