@@ -21,10 +21,11 @@ Want to get going? No problem! these are the basic requirements to make this pro
     sudo mv terraform /usr/local/bin/
     terraform --version
     ```
+    or if you have a Mac:
 
-or if you have a Mac:
-
+    ```
     brew install terraform
+    ```
 
 ## Creating the ethereum node
 
